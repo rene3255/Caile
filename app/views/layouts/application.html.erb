@@ -11,6 +11,19 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+    
+      <header class="navbar">
+       <%= render 'shared/caile_navbar' %>
+      </header>
+      
+      <main class="content">   
+            <%= yield %>
+      </main>    
+      
+      <footer class="footer">
+        <%= render 'shared/footer' %>
+      </footer>
+    </div>  
   </body>
 </html>

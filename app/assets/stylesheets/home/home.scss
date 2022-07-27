@@ -1,0 +1,73 @@
+.container {
+    display: grid;
+    grid-template-rows: 90px 1fr 90px;
+    min-height: 100vh;
+    background-color: $yellow-color;
+    
+}
+
+.content {
+    display: grid;
+   /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-rows: 70% auto;
+    grid-area: "img_one"
+               "entry";
+   
+}
+
+.img_one {
+    display: grid;
+    justify-content: center;
+    align-self: center;
+}
+
+
+.navbar {
+    display:grid;
+    grid-template-columns: 100px auto 100px;
+    grid-area: "logo menu burger";
+    padding: .3rem;
+    background-color: $purple-color;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    color: $green-color;
+    
+}
+
+.menu_options {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+    gap: 3rem;
+    
+}
+
+.menu_options_item {
+    list-style-type:none;
+  
+}
+
+.menu_options_item_link {
+    color: $green-color;
+  
+}
+
+.footer {
+    display:flex;
+    padding: .3rem;
+    background-color: $purple-color;
+    justify-content: center;
+    align-items: center;
+
+}
