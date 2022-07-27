@@ -1,0 +1,16 @@
+.button {
+    background-color: $pink-color;
+    border-radius: 20px;
+    border: none;
+    box-shadow: $medium-shadow;
+    font-size: 20px;
+    font-weight: 400;
+    height: 2.5rem;
+    width: 25%;
+    color: $white;
+}
+  .button:hover {
+    box-shadow: $medium-shadow;
+    cursor: pointer;
+    transform: scale(1.02);
+}
