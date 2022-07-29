@@ -1,6 +1,6 @@
 .button {
     @include center-flex-column;
-    background-color: $pink-color;
+    background-color: $button-color;
     border-radius: 20px;
     border: none;
     box-shadow: $medium-shadow;
@@ -15,4 +15,27 @@
     box-shadow: $medium-shadow;
     cursor: pointer;
     transform: scale(1.02);
+}
+
+.devise-container {
+    @include center-flex-column;
+    border-radius: 15px;
+    box-shadow: 0 0 3px black;
+    margin: 40px 0;
+    padding: 15px;
+    width: 900px;
+}
+
+input {
+    border-radius: 2rem;
+    border: none;
+    color: $black;
+    margin: 0.5rem 0;
+    padding: 0.4rem 1.2rem;
+    width: 100%;
+}
+
+.input-form {
+
+    background-color: $purple-color;
 }

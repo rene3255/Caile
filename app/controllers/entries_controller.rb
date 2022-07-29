@@ -13,10 +13,11 @@ class EntriesController < ApplicationController
     puts "E U R E K A"
 
     @temp_data.each do |key, value|
-          puts value
+          TEMP_MODEL.push(value)
     end  
+    puts TEMP_MODEL[0]
     redirect_to new_user_registration_path
-   
+    
       
   end
 
