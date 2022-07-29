@@ -1,0 +1,18 @@
+<div class="img_one">
+   <%= form_with model: Entry.new do |f| %>
+        <%= f.label "Título" %><br/>
+        <%= f.text_field :title %><br/>
+        
+        <%= f.label "Description" %><br/>
+        <%= f.text_field :description %><br/>
+
+        <%= f.label "Fecha del evento" %><br/>
+        <%= f.date_field :event_date %><br/>
+
+        <%= f.label "A que hora será el vento?" %><br/>
+        <%= f.time_field :event_time %><br/>
+
+        <%= f.submit "Enviar" %> 
+    <% end %>
+   
+</div>

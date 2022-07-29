@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'entries/index'
+
+  get 'entries/new', to: 'entries#new'
+  post 'entries/', to: 'entries#create'
+  
   devise_for :users
 
   devise_scope :user do
