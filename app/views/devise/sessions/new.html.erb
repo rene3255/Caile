@@ -1,5 +1,10 @@
 <div class="img_one">
   <div class="devise-container">
+    <% if TEMP_MODEL.length > 0 %>
+               <h2>Casí listo..</h2>
+            <% else %>
+               <h2>Buenas decisión!</h2>
+            <% end %>
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name), class: "entry-form")  do |f| %>
     

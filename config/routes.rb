@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+  get 'events/index'
+  get 'events', to: 'events#index'
+
+  get 'events/new', to: 'events#new'
+  post 'events/', to: 'events#create'
+
+  #{}get 'events/edit'
+  #{}get 'events/show'
+
+  get 'users/index'
+  
   get 'entries/index'
 
   get 'entries/new', to: 'entries#new'

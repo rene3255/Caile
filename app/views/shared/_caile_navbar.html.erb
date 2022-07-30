@@ -10,17 +10,32 @@
     <li class="menu_options_item">
         <a href="" class="menu_options_item_link">Invitado</a>
     </li>
-    <li class="menu_options_item">
-        <a href="" class="menu_options_item_link">Crear Evento</a>
-    </li>
+    
+      <% if user_signed_in?  %>
+        <li class="menu_options_item">
+          <%= link_to 'Crear Evento', events_new_path, class: "menu_options_item_link"  %>
+        </li>
+
+        <li class="menu_options_item">
+          <%= link_to 'Salir', destroy_user_session_path, class: "menu_options_item_link"  %>
+        </li>
+       <% else %>
+
+
+         <li class="menu_options_item">
+          <%= link_to 'Entrar', new_user_session_path, class: "menu_options_item_link"  %>
+        </li>
+
+        <li class="menu_options_item">
+          <%= link_to 'Registrase', new_user_registration_path, class: "menu_options_item_link"  %>
+        </li> 
+      <% end %>
+   
     
     <li class="menu_options_item">
         <a href="" class="menu_options_item_link"> --- </a>
     </li>
-    
-    <li class="menu_options_item">
-        <a href="" class="menu_options_item_link">Registrase</a>
-    </li>
+
     
   </ul>
         

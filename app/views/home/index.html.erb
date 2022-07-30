@@ -5,7 +5,10 @@
 </div>
 <div class="entry">
   <!-- <button class="button">Empezar Evento</button> -->
-   
-   <%= link_to 'Empezar Evento', entries_index_path, class: "button" %>
+   <% if user_signed_in? %>
+     <%= link_to 'Empezar Evento', events_new_path, class: "button" %> 
+   <% else %> 
+    <%= link_to 'Empezar Evento', entries_index_path, class: "button" %>
+   <% end %>
 </div>
 

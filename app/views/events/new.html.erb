@@ -1,0 +1,28 @@
+
+<div class="create_event">
+<%= form_with model: @event, class:"entry-form" do |f| %>
+  <div>
+      <%= alert %>
+  </div>
+  <%= f.label "Título" %><br/>
+    <%= f.text_field :title, class: "input-form" %><br/>
+
+    <%= f.label "Description" %><br/>
+    <%= f.text_field :description, class: "input-form" %><br/>
+
+    <%= f.label "Fecha del evento" %><br/>
+    <%= f.date_field :event_date, class: "input-form" %><br/>
+
+    <%= f.label "A que hora será el vento?" %><br/>
+    <%= f.time_field :event_time, class: "input-form" %><br/>
+
+    <%= f.label "Id de Usuario" %><br/>
+    <%= f.number_field :user_id, value:"#{current_user.id}", class: "input-form" %><br/>
+
+    <div class="entry-submit">
+        <%= f.submit "Enviar", class:"button" %>
+    </div> 
+<% end %>
+
+<%= link_to 'Back to landing page', root_path %>
+</div>

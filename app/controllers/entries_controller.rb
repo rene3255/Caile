@@ -1,4 +1,6 @@
 class EntriesController < ApplicationController
+    
+
   def index
    
   end
@@ -15,9 +17,11 @@ class EntriesController < ApplicationController
     @temp_data.each do |key, value|
           TEMP_MODEL.push(value)
     end  
-    puts TEMP_MODEL[0]
-    redirect_to new_user_registration_path
-    
+    if TEMP_MODEL.include?("")
+        redirect_to root_path
+    else    
+     redirect_to new_user_registration_path
+    end
       
   end
 
