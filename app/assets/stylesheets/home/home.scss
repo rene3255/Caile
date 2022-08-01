@@ -68,6 +68,20 @@
     color: $white;
 }
 
+.core-message-content {
+    @include center-flex-column;
+
+}
+
+.main-messesage {
+    @include center-flex-column;
+}
+
+.image-main-message {
+    @include center-flex-column;
+
+}
+
 .footer {
     display:flex;
     padding: .3rem;

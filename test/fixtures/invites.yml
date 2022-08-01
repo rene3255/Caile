@@ -1,0 +1,28 @@
+# == Schema Information
+#
+# Table name: invites
+#
+#  id         :bigint           not null, primary key
+#  firts_name :string
+#  last_name  :string
+#  invitee    :boolean          default(TRUE)
+#  event_id   :bigint           not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+one:
+  firts_name: MyString
+  last_name: MyString
+  invitee: false
+  default: MyString
+  'true': MyString
+  event: one
+
+two:
+  firts_name: MyString
+  last_name: MyString
+  invitee: false
+  default: MyString
+  'true': MyString
+  event: two

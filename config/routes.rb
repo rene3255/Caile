@@ -1,13 +1,20 @@
 Rails.application.routes.draw do
+
+# URLS for invite model
+  get 'invites/index'
+  get 'invites/', to: 'invites#index'
+
+  get 'invites/new', to: 'invites#new'
+  post 'invites/', to: 'invites#create'
+
+# URLS ofr Event model
   get 'events/index'
-  get 'events', to: 'events#index'
+  get 'events/', to: 'events#index'
 
   get 'events/new', to: 'events#new'
   post 'events/', to: 'events#create'
 
-  #{}get 'events/edit'
-  #{}get 'events/show'
-
+ 
   get 'users/index'
   
   get 'entries/index'

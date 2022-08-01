@@ -1,5 +1,6 @@
 <div class="img_one">
     <div class= "devise-container">
+ 
     <%= form_with model: Entry.new , class:"entry-form" do |f|  %>
             
                 <%= f.label "Título" %><br/>
@@ -11,7 +12,7 @@
                 <%= f.label "Fecha del evento" %><br/>
                 <%= f.date_field :event_date, class: "input-form" %><br/>
 
-                <%= f.label "A que hora será el vento?" %><br/>
+                <%= f.label "A que hora será el evento?" %><br/>
                 <%= f.time_field :event_time, class: "input-form" %><br/>
           
             <div class="entry-submit">

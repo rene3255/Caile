@@ -1,0 +1,28 @@
+  <div class="invitee_list">
+  
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellidos</th>
+      <th scope="col">Evento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @invites.each do |invite| %>
+       <tr>
+        <th scope="row" class="list_row_width"><%= invite.id  %></th>
+        <td><%= invite.firts_name  %></td>
+        <td><%= invite.last_name %></td>
+        <td><%= invite.title %></td>
+        </tr>
+    <% end %>    
+  </tbody>
+</table>  
+
+</div>
+
+  
+
+

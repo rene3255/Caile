@@ -1,0 +1,27 @@
+<div class="create_event">
+<%= form_with model: @invite, class:"entry-form" do |f| %>
+  <div>
+      <%= alert %>
+  </div>
+  <%= f.label "Nombre" %><br/>
+    <%= f.text_field :firts_name, class: "input-form" %><br/><br/>
+
+    <%= f.label "Apellidos" %><br/>
+    <%= f.text_field :last_name, class: "input-form" %><br/><br/>
+
+    <%= f.label :event_id, 'Evento' %> <br/>
+    <%= f.select :event_id, @result_set %><br/><br/>
+
+    <%= f.label :invitee, 'Status propuesto' %> <br/>
+    <%= f.select :invitee, [["Invitado", true], ["Pendiente", false]] %><br/><br/>
+    
+    
+
+   
+    <div class="entry-submit">
+        <%= f.submit "Enviar", class:"button" %>
+    </div> 
+<% end %>
+
+<%= link_to 'Back to landing page', root_path %>
+</div>

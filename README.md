@@ -1,10 +1,9 @@
-# README
+# CAILE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+When you are invited to join to some one kind social event is crucial to know if am I in the invetees check list.
 
-Things you may want to cover:
-
+Framework:
+* Ruby on [rails](https://rails)
 * Ruby version
 
 * System dependencies

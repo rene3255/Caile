@@ -7,14 +7,21 @@
 
 <div class="menu">
   <ul class="menu_options">
-    <li class="menu_options_item">
-        <a href="" class="menu_options_item_link">Invitado</a>
-    </li>
+    
     
       <% if user_signed_in?  %>
+
+        <li class="menu_options_item">
+          <%= link_to 'Lista de invitados', invites_path, class: "menu_options_item_link"  %>
+        </li>
         <li class="menu_options_item">
           <%= link_to 'Crear Evento', events_new_path, class: "menu_options_item_link"  %>
         </li>
+
+        <li class="menu_options_item">
+          <%= link_to 'Escoger Invitados', invites_new_path, class: "menu_options_item_link"  %>
+        </li>
+
 
         <li class="menu_options_item">
           <%= link_to 'Salir', destroy_user_session_path, class: "menu_options_item_link"  %>
