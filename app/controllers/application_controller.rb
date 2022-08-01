@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
        
     def add_event_to_event_model
         if user_signed_in?
-
+            puts "USUARIO #{current_user.id}"
             @save_event = Event.new
             @save_event.title = TEMP_MODEL[0]
             @save_event.description = TEMP_MODEL[1]

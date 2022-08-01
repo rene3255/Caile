@@ -13,7 +13,7 @@
 #
 class Event < ApplicationRecord
   validates :title, presence: true, uniqueness: true
-  validates :Description, presence: true
+  validates :description, presence: true
   validates :event_date, presence: true
   validates :event_time, presence: true
   

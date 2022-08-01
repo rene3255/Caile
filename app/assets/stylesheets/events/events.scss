@@ -5,3 +5,10 @@
 .create_event {
     @include center-flex-column;
 }
+
+.event_table td {
+    
+    width: 300px;
+    text-align: center;
+}
+

@@ -1,8 +1,23 @@
-<div class="img_one">
-  <div class="active_events">
-    <% @events.each do |event| %>
-      <p><%= event.title %> | <%= event.description %></p><br/>
-    <% end %>
+  <div class="create_event">
+        <table class="event_table">
+        <thead>
+            <tr>
+            <th scope="col" class="list_col_width" >Título</th>
+            <th scope="col" class="list_col_width">Descripción</th>
+            <th scope="col" class="list_col_width">Fecha</th>
+            <th scope="col" class="list_col_width">Hora</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @events.each do |event| %>
+            <tr class="list_row_width">
+                <td><%= event.title  %></td>
+                <td class="width_description"><%= event.description  %></td>
+                <td><%= event.event_date %></td>
+                <td><%= event.event_time.to_s(:time) %></td>
+                </tr>
+            <% end %>    
+        </tbody>
+        </table>  
+   </div>
 
-  </div>
-</div>
