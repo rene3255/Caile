@@ -3,16 +3,16 @@
   <table class="table">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">Nombre</th>
-      <th scope="col">Apellidos</th>
-      <th scope="col">Evento</th>
+      <th scope="col" class="list_col_width" >#</th>
+      <th scope="col" class="list_col_width">Nombre</th>
+      <th scope="col" class="list_col_width">Apellidos</th>
+      <th scope="col" class="list_col_width">Evento</th>
     </tr>
   </thead>
   <tbody>
     <% @invites.each do |invite| %>
-       <tr>
-        <th scope="row" class="list_row_width"><%= invite.id  %></th>
+       <tr class="list_row_width">
+        <td><%= invite.id  %></td>
         <td><%= invite.firts_name  %></td>
         <td><%= invite.last_name %></td>
         <td><%= invite.title %></td>
